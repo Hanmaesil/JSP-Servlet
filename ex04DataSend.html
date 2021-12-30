@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!--실행은!! 문서에서 먼저 실행하는것!! -->
+	<h1>서버로 데이터 전송하기</h1>
+	<!-- 사용자가 입력한 데이터를 서버프로그램(Servlet)으로 전송 -->
+	<!-- 주석처리는 ctrl + shift + /  -->
+	<!--  
+		* 서버로 데이터를 전송하기 위한 3가지 요소
+		1. action속성 : 서버의 경로 지정
+		2. name 속성 : 데이터의 이름을 지정
+		3. submit : 서버로 데이터를 전송하는 역할
+		**method는 적지 않으면 기본값으로 get이 들어가 있다.	
+	-->
+	<form action="DataSend">
+		데이터 입력 :  <input type="text" name = "data">
+		<input type="submit" value="전송">
+	</form>
+</body>
+</html>
