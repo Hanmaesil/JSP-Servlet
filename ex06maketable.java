@@ -20,11 +20,16 @@ public class ex06maketable extends HttpServlet {
 		
 		
 		String room = request.getParameter("room");
-		int room1 = Integer.parseInt("room");
+		int room1 = Integer.parseInt(room);
 		
 		out.print("<html><head><title>°á°ú</title></head>");
 		out.print("<body>");
 		out.print("<table border=1px solid black>");
+		out.print("<tr>");
+		for(int i = 1; i <= room1; i++) {
+			out.print("<td>" + i + "</td>");
+		}
+		out.print("</tr>");
 		out.print("</table>");
 		out.print("</body></html>");
 		
