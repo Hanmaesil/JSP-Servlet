@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>원하는 사진의 번호를 입력해주세요</h1>
+	<form action = "image" method="get">
+	<!-- post는 formdata에 담겨서 전달이 된다!!, get은 쿼리스트링에 담겨서 전달이 된다! 
+	post방식은 보안이 필요할 때 주로 사용
+		또한 전송하는 데이터의 길이에 제한이 없어서 대용량 파일이나 이미지를 사용할때 사용.
+		url주소창에 정보가 노출이 되지 않는다.(로그인시 입력한 값이 url창에 안적힌다!)
+	 -->
+		<p>보기 : 1. 고양이 2. 고양이 3. 고양이</p>
+		<input type = "text" name = "num">
+		<input type = "submit" value = "보기">
+	</form>
+</body>
+</html>
